@@ -21,7 +21,7 @@ here https://www.dropbox.com/sh/t53vjs539gmixnm/AAC0BqTR0U5xghKwuVc1Iwbma?dl=0  
 or here https://pan.baidu.com/s/1zVJtwNg0morQS3pdnoezSA   <br />
 
 <br />
-A very preliminary User's Guide can be downloaded here https://github.com/mingsongli/acycle/blob/master/Acyclev0.2.1/doc/AC_User's_Guide.pdf.
+A very preliminary User's Guide can be downloaded here https://github.com/mingsongli/acycle/blob/master/doc/AC_User's_Guide.pdf.
 <br />
 <br />
 <br />
@@ -49,7 +49,7 @@ in MatLab’s command window, then press the ENTER key.
 <br />
 <b>Data requirement</b>
 
-See example data at https://github.com/mingsongli/acycle/tree/master/Acyclev0.2.1/data
+See example data at https://github.com/mingsongli/acycle/tree/master/data/Zhangetal2015PPP
 
 The input file of data series can be in a variety of formats, including table- or space-delimited text (.txt), and comma-separated values files (.csv) from an Excel-type spreadsheet. The data file must contain two columns of series. The first column must be in depth or time, and the second column should be value in the corresponding depth or time. Unit of the series in depth domain should be in meters. The data can be saved in any directory and is recommended to save in Acycle “data” folder. All data files, plots, and folders are displayed in the GUI list box.
 <br />
