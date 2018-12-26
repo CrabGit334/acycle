@@ -54,8 +54,10 @@ function spectrum_OpeningFcn(hObject, eventdata, handles, varargin)
 set(0,'Units','normalized') % set units as normalized
 set(gcf,'units','norm') % set location
 h=get(gcf,'Children');  % get all content
-h1=findobj(h,'FontUnits','points');  % find all font units as points
-set(h1,'FontUnits','norm');  % set as norm
+h1=findobj(h,'FontUnits','norm');  % find all font units as points
+set(h1,'FontUnits','points','FontSize',11.5);  % set as norm
+h2=findobj(h,'FontUnits','points');  % find all font units as points
+set(h2,'FontUnits','points','FontSize',11.5);  % set as norm
 if ismac
     set(gcf,'position',[0.5,0.5,0.28,0.3]) % set position
 elseif ispc

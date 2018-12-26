@@ -77,9 +77,12 @@ set(handles.axes_refresh,'position',[0.36,0.945,0.06,0.05])
 set(handles.axes_robot,'position',  [0.44,0.945,0.06,0.05])
 set(handles.edit1,'position',       [0.02,0.9,0.96,0.04])
 set(handles.listbox1,'position',    [0.02,0.008,0.965,0.884])
+
 h=get(gcf,'Children');  % get all content
-h1=findobj(h,'FontUnits','points');  % find all font units as points
-set(h1,'FontUnits','norm');  % set as norm
+%h1=findobj(h,'FontUnits','norm');  % find all font units as points
+%set(h1,'FontUnits','points','FontSize',11);  % set as norm
+h2=findobj(h,'FontUnits','points');  % find all font units as points
+set(h2,'FontUnits','points','FontSize',11);  % set as norm
 % set icons
 axes(handles.axes_up);
 menu_up = imread('menu_up.png');
@@ -187,6 +190,8 @@ handles.math_deleteempty = 1;
 handles.math_derivative = 1;
 assignin('base','unit',handles.unit)
 assignin('base','unit_type',handles.unit_type)
+
+%handles.fontsizeall = 12;
 % Update handles structure
 guidata(hObject, handles);
 

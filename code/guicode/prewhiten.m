@@ -55,20 +55,23 @@ set(0,'Units','normalized') % set units as normalized
 set(gcf,'units','norm') % set location
 set(gcf,'Name','Acycle: Detrending')
 h=get(gcf,'Children');  % get all content
-h1=findobj(h,'FontUnits','points');  % find all font units as points
-set(h1,'FontUnits','norm');  % set as norm
-if ismac
+h1=findobj(h,'FontUnits','norm');  % find all font units as points
+set(h1,'FontUnits','points','FontSize',12);  % set as norm
+h2=findobj(h,'FontUnits','points');  % find all font units as points
+set(h2,'FontUnits','points','FontSize',12);  % set as norm
+%if ismac
     set(gcf,'position',[0.5,0.4,0.25,0.5]) % set position
-elseif ispc
-    set(gcf,'position',[0.4,0.1,0.4,0.8]) % set position
-end
+%elseif ispc
+%    set(gcf,'position',[0.4,0.1,0.4,0.8]) % set position
+%end
 set(handles.uipanel6,'position',[0.126,0.254,0.724,0.666])
-set(handles.text21,'position',[0.021,0.852,0.26,0.07],'FontSize',0.6)
+set(handles.text21,'position',[0.021,0.852,0.26,0.07])
 set(handles.edit10,'position',[0.284,0.852,0.24,0.1])
-set(handles.text20,'position',[0.538,0.873,0.13,0.07],'FontSize',0.6)
+set(handles.text20,'position',[0.538,0.873,0.13,0.07])
 set(handles.edit11,'position',[0.69,0.852,0.18,0.1])
-set(handles.text23,'position',[0.871,0.852,0.13,0.07],'FontSize',0.6)
+set(handles.text23,'position',[0.871,0.852,0.13,0.07])
 set(handles.slider4,'position',[0.1,0.729,0.75,0.09])
+set(handles.text24,'position',[0.423,0.659,0.466,0.07])
 
 set(handles.prewhiten_lowess_checkbox,'position',[0.043,0.61,0.4,0.1])
 set(handles.prewhiten_rlowess_checkbox,'position',[0.043,0.51,0.4,0.1])
