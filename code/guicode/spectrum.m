@@ -250,12 +250,13 @@ if strcmp(method,'Multi-taper method')
             else
                 set(gca, 'YScale', 'linear')
             end
-
+            CDac_pwd;
             dlmwrite(name1, data1, 'delimiter', ',', 'precision', 9);
             dlmwrite(name2, data2, 'delimiter', ',', 'precision', 9);
             disp('>>  Refresh main window to see red noise estimation data files: ')
             disp(name1)
             disp(name2)
+            cd(pre_dirML);
         end
     
     end
