@@ -1,8 +1,8 @@
 ![logo](https://github.com/mingsongli/acycleFig/blob/master/default_icon_1024-git.gif)
 
+[![](https://img.shields.io/badge/version-v1.0.1-blue.svg)]()
 [![](https://img.shields.io/badge/license-GPL-brightgreen.svg)](https://www.gnu.org/licenses/)
 [![](https://img.shields.io/badge/platform-Mac_Win-green.svg)]()
-[![](https://img.shields.io/badge/version-v1.0.1-blue.svg)]()
 ![](https://img.shields.io/badge/language-MatLab-red.svg)
 ---
 `Acycle is a time-series analysis software for paleoclimate research and education`
